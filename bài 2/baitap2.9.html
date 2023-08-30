@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,"a","!","@","@",9]
+        arr.i
+        function check(array,a) {
+            if(array.includes(a)== false) 
+            return -1;
+            else{
+                let count =0;
+                for(let i=0;i<array.length;i++){
+                    if(array[i]== a){
+                    count++;}
+                }
+                console.log(count)
+            }
+        }
+        check(arr,"@")
+        console.log(check(arr,"#"))
+    </script>
+</body>
+</html>

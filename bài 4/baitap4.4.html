@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text="hello world";
+        let arr= text.split("");
+        let checkArr=[];
+        for (let i = 0; i < arr.length; i++) {
+            if (checkArr.indexOf(arr[i])==-1) {
+                checkArr.push(arr[i])
+            }
+            }
+            console.log(checkArr);
+        for (let j = 0; j < checkArr.length; j++) {
+            let count=0;
+            for (let k = 0; k < arr.length; k++) {
+                if (checkArr[j]==checkArr[k]) {
+                    count++;
+                }
+            }
+            console.log(`${checkArr[j]}xuất hiện${count} lần`);
+        }
+
+
+       
+
+    </script>
+</body>
+</html>

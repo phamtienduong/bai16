@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function compareAndSum(param1, param2) {
+        if (param1 > param2) {
+          alert("Giá trị của tham số thứ nhất lớn hơn tham số thứ hai");
+        } else {
+          return param1 + param2;
+        }
+      }
+      
+      // Gọi hàm compareAndSum() với tham số là 5 và 3
+      var result = compareAndSum(5, 3);
+      
+      // Kiểm tra kết quả và hiển thị lên màn hình
+      if (result !== undefined) {
+        document.write("Tổng của hai tham số: " + result);
+      }
+    </script>
+</body>
+</html>

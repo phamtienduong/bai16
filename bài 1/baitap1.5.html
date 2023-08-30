@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let stars = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        let star = prompt("moi nhap ngoi sao")
+        console.log(names);
+        console.log(stars);
+        function check(name){
+            if(names.indexOf(name)!== -1){
+                let c =stars[names.indexOf(name)]
+                console.log(`${name} la chom sao ${c}`)
+            }else{
+                console.log("ko thay thong tin ngoi sao")
+            }
+        }
+        check(star)
+    </script>
+</body>
+</html>
